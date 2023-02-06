@@ -13,13 +13,21 @@ public class Polygon {
     private String st;
     private double perimeter = ns * sl;
 
+    /**
+     * @return default constructor
+     */
+    
     public Polygon() {
         ns = 3;
         sl = 1.0;
         st = "triangle";
         perimeter = ns * sl;
     }
-
+    
+    /**
+     * @return constructor with 3 parameters that creates a polygon
+     */
+    
     public Polygon(int numSides, double sideLength, String shapeType) {
         ns = numSides;
         sl = sideLength;
@@ -57,7 +65,11 @@ public class Polygon {
     public String getShapeType() {
         return st;
     }
-
+    
+    /**
+     * @return returns if the polygon is invalid, or returns information about the polygon
+     */
+    
     public String toString() {
         DecimalFormat df = new DecimalFormat("#.##");
         if (sl <= 0 || ns < 3) {
