@@ -8,10 +8,10 @@ import java.text.DecimalFormat;
  */
 public class Polygon {
 
-    public int ns;
-    public double sl;
-    public String st;
-    public double perimeter = ns * sl;
+    private int ns;
+    private double sl;
+    private String st;
+    private double perimeter = ns * sl;
 
     public Polygon() {
         ns = 3;
